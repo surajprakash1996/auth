@@ -1,0 +1,39 @@
+<%- include('layouts/header' ) %>
+
+<div class="container-fluid">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-6 left-section">
+        <h1>Welcome to MyWebsite</h1>
+        <p>
+          Explore new features and opportunities by logging in.  
+          Stay connected and manage your account effortlessly.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 right-section">
+        <form class="login-form">
+          <h2 class="text-center mb-4">Login</h2>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="remember">
+            <label class="form-check-label" for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<%- include('layouts/footer') %>

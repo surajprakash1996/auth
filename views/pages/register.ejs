@@ -1,0 +1,90 @@
+  <%- include('../layouts/header') %>
+  
+  
+<!-- Full-Screen Section -->
+<div class="container-fluid">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-6 left-section">
+        <h1>Join MyWebsite Today</h1>
+        <p>
+          Create an account to get started with exclusive features and updates.  
+          It's fast, simple, and secure.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 right-section">
+        <form class="register-form needs-validation" action="/register" method="post">
+          <h2 class="text-center mb-4">Register</h2>
+
+          <!-- First and Last Name -->
+          <div class="row mb-3">
+            <div class="col-md-6 d-flex align-items-center">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstname" placeholder="Enter first name" required>
+              <div class="invalid-feedback">First name is required.</div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastname" placeholder="Enter last name" required>
+              <div class="invalid-feedback">Last name is required.</div>
+            </div>
+          </div>
+
+          <!-- Gender -->
+          <div class="mb-3 d-flex align-items-center">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="" selected disabled>Choose gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="invalid-feedback">Please select your gender.</div>
+          </div>
+
+          <!-- Address -->
+          <div class="mb-3 d-flex align-items-center">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Enter your address" required>
+            <div class="invalid-feedback">Address is required.</div>
+          </div>
+
+          <!-- Phone -->
+          <div class="mb-3 d-flex align-items-center">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" name="phonenumber" id="phone" placeholder="Enter your phone number" required>
+            <div class="invalid-feedback">Phone number is required.</div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3 d-flex align-items-center">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">Valid email is required.</div>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3 d-flex align-items-center">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            <div class="invalid-feedback">Password is required.</div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="mb-3 d-flex align-items-center">
+            <label for="confirmPassword" class="form-label">Confirm</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmpassword" placeholder="Confirm your password" required>
+            <div class="invalid-feedback">Passwords must match.</div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-dark w-100">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <%- include('../layouts/footer') %>
